@@ -1,0 +1,10 @@
+<div>
+	<h1>Product Page</h1>
+	<p ng-repeat="art in data">
+		<b>ID :</b>{{art.id_art}} / <b>Label :</b>{{art.label}} <br>
+		<strong>Prix :
+			<mark><em>{{art.prix-(art.prix*(art.tva/100))}}</em> DTT</mark>
+		</strong>
+		
+	</p>
+</div>

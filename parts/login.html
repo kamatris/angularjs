@@ -1,0 +1,16 @@
+<div>
+	<h1>Login Page</h1>
+	<form name="form">
+		<ul>
+			<li><label>Login : 
+				<input type="text" ng-model="login" ng-pattern='/^[\w]{4,10}$/'>
+			</label></li>
+			<li><label>Password
+				<input type="password" ng-model="pword" ng-required="true">
+			</label></li>
+			<li>
+				<button ng-disabled="form.$invalid" ng-click="auth(login , pword)">Login</button>
+			</li>
+		</ul>
+	</form>
+</div>
